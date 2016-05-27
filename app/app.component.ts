@@ -12,7 +12,9 @@ export class Hero {
     template:`
     <h2>My Heroes</h2>
     <ul class="heroes">
-        <li *ngFor="let hero of heroes"> <span class="badge">{{hero.id}}</span> {{hero.name}}</li>
+        <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </li>
     </ul>
     `,
     styles:[`
@@ -37,7 +39,7 @@ export class Hero {
       border-radius: 4px;
     }
     .heroes li.selected:hover {
-      background-color: #BBD8DC !important;
+      background-color: #BBD8DC;
       color: white;
     }
     .heroes li:hover {
