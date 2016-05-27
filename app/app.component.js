@@ -15,6 +15,7 @@ var Hero = (function () {
     return Hero;
 }());
 exports.Hero = Hero;
+/*“take each hero in the heroes array, store it in the local hero variable, and make it available to the corresponding template instance”.*/
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
@@ -23,7 +24,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <h2>My Heroes</h2>\n    <ul class=\"heroes\">\n        <li *ngFor=\"let hero of heroes\">\n    </ul>\n    "
+            template: "\n    <h2>My Heroes</h2>\n    <ul class=\"heroes\">\n        <li *ngFor=\"let hero of heroes\"> <span class=\"badge\">{{hero.id}}</span> {{hero.name}}</li>\n    </ul>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

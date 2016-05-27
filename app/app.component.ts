@@ -5,12 +5,14 @@ export class Hero {
     name: string;
 }
 
+
+/*“take each hero in the heroes array, store it in the local hero variable, and make it available to the corresponding template instance”.*/
 @Component({
     selector: 'my-app',
     template:`
     <h2>My Heroes</h2>
     <ul class="heroes">
-        <li *ngFor="let hero of heroes">
+        <li *ngFor="let hero of heroes"> <span class="badge">{{hero.id}}</span> {{hero.name}}</li>
     </ul>
     `
 })
