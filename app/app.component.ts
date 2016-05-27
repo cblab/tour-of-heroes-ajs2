@@ -1,6 +1,6 @@
-import {Component} from 'angular2/core';
+import { Component } from '@angular/core';
 
-interface Hero {
+export class Hero {
     id: number;
     name: string;
 }
@@ -13,14 +13,13 @@ interface Hero {
     <div><label>id: </label>{{hero.id}}</div>
     <div>
       <label>name: </label>
-      <div><input [(ngModel)]="hero.name" placeholder="name"></div>
+      <input [(ngModel)]="hero.name" placeholder="name">
     </div>
     `
 })
-
 export class AppComponent {
-    public title = 'Tour of Heroes';
-    public hero: Hero = {
+    title = 'Tour of Heroes';
+    hero: Hero = {
         id: 1,
         name: 'Windstorm'
     };
