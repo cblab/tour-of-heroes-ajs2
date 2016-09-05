@@ -5,8 +5,8 @@ export class Hero {
     name: string;
 }
 
-
-/*“take each hero in the heroes array, store it in the local hero variable, and make it available to the corresponding template instance”.*/
+/*“take each hero in the heroes array, store it in the local hero variable, 
+ * and make it available to the corresponding template instance”.*/
 @Component({
     selector: 'my-app',
     template:`
@@ -79,6 +79,7 @@ export class Hero {
     }
   `]
 })
+
 export class AppComponent {
     title = 'Tour of Heroes';
     heroes = HEROES;

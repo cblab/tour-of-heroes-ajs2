@@ -15,7 +15,8 @@ var Hero = (function () {
     return Hero;
 }());
 exports.Hero = Hero;
-/*“take each hero in the heroes array, store it in the local hero variable, and make it available to the corresponding template instance”.*/
+/*“take each hero in the heroes array, store it in the local hero variable,
+ * and make it available to the corresponding template instance”.*/
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
